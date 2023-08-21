@@ -1,0 +1,13 @@
+mat-card {
+    width: 75%;
+    height: 70%;
+}
+
+
+/* @media (max-width: 520px) {
+    mat-grid-list::before {
+        display: block;
+        flex: auto;
+        flex-direction: column;
+    }
+} */

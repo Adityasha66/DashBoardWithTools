@@ -1,0 +1,38 @@
+.team-profile-wrap {
+    &:first-child {
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+        border-top: 2px solid black;
+    }
+    &:last-child {
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+    }
+    &:hover {
+        .team-profile-image {
+            img {
+                transform: scale(1);
+            }
+        }
+    }
+}
+
+.team-profile-image {
+    img {
+        transform: scale(1.2);
+        transition: transform 0.3s;
+    }
+}
+
+@media (min-width: 768px) {
+    .team-profile-wrap {
+        &:first-child {
+            border-top-right-radius: 0;
+            border-bottom-left-radius: 1rem;
+        }
+        &:last-child {
+            border-top-right-radius: 1rem;
+            border-bottom-left-radius: 0;
+        }
+    }
+}
